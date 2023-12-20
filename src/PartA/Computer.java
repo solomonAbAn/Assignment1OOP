@@ -1,4 +1,4 @@
-package Pack5;
+package PartA;
 
 public class Computer {
     private String brand;

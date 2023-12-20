@@ -1,4 +1,4 @@
-package Pack5;
+package PartA;
 
 public class ComputerStoreDriver {
     public static void main(String[] args) {
