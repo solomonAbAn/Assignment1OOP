@@ -1,22 +1,23 @@
 package PartA;
 
 public class Computer {
-//    private String brand;
-//    private String model;
-//    private long serialNumber;
-//    private double price;
-//    private static int numberOfCreatedComputers = 0;
-//
-//    // Constructor
-//    public Computer(String brand, String model, long serialNumber, double price) {
-//        this.brand = brand;
-//        this.model = model;
-//        this.serialNumber = serialNumber;
-//        this.price = price;
-//        numberOfCreatedComputers++;
-//    }
-//
-//    // Accessors and Mutators
+	//testing commit
+    private String brand;
+    private String model;
+    private long serialNumber;
+    private double price;
+    private static int numberOfCreatedComputers = 0;
+
+    // Constructor
+    public Computer(String brand, String model, long serialNumber, double price) {
+        this.brand = brand;
+        this.model = model;
+        this.serialNumber = serialNumber;
+        this.price = price;
+        numberOfCreatedComputers++;
+    }
+
+    // Accessors and Mutators
     public String getBrand() {
         return brand;
     }
