@@ -2,6 +2,7 @@ package PartA;
 
 public class Computer {
 	//testing commit
+	//testing commit again
     private String brand;
     private String model;
     private long serialNumber;
