@@ -1,4 +1,4 @@
-package PartB;
+package PartBB;
 
 public class Computer {
     private String brand;
@@ -6,12 +6,15 @@ public class Computer {
     private int serialNumber;
     private double price;
 
+    // Constructors
     public Computer(String brand, String model, int serialNumber, double price) {
         this.brand = brand;
         this.model = model;
         this.serialNumber = serialNumber;
         this.price = price;
     }
+
+    // Getters and setters (you can generate these using your IDE)
 
     public String getBrand() {
         return brand;
@@ -47,6 +50,11 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Brand: " + brand + "\nModel: " + model + "\nSN: " + serialNumber + "\nPrice: $" + price;
+        return "Computer{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", serialNumber=" + serialNumber +
+                ", price=" + price +
+                '}';
     }
 }

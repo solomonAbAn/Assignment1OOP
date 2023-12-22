@@ -1,8 +1,8 @@
 package PartA;
 
+
 public class Computer {
-	//testing commit
-	//testing commit again
+	
     private String brand;
     private String model;
     private long serialNumber;
@@ -10,8 +10,28 @@ public class Computer {
     private static int numberOfCreatedComputers = 0;
 
     // Constructor
-    public Computer(String brand, String model, long serialNumber, double price) {
-        this.brand = brand;
+    public Computer(String brand, String model, long serialNumber, double price) throws ExceptionHandling {
+    	if (brand == null || brand.isEmpty()) {
+            throw new EmptyBrandNameException("Brand name cannot be empty");
+        }
+
+        if (model == null || model.isEmpty()) {
+            throw new EmptyModelNameException("Model name cannot be empty");
+        }
+
+        if (serialNumber < 0) {
+            throw new IllegalArgumentException("Serial number cannot be less than zero");
+        }
+
+        if (String.valueOf(serialNumber).length() < 6) {
+            throw new IllegalArgumentException("Serial number must be at least 6 digits");
+        }
+
+        if (price < 0) {
+            throw new NegativePriceException("Price cannot be negative");
+        }
+    	
+    	this.brand = brand;
         this.model = model;
         this.serialNumber = serialNumber;
         this.price = price;
